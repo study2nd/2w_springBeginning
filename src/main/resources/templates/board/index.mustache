@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Board page</title>
+</head>
+<body>
+    <h1>Board</h1>
+    <form action="/board/echo" method="GET">
+        <label>Title</label>
+        <input name="title" type="text" value="" />
+        <br /><br />
+        <lable>Contents</lable>
+        <textarea name="content"></textarea>
+        <br /><br />
+        <input type="submit" value="GET method" />
+    </form>
+    <hr />
+    <form action="/board/echo" method="POST">
+        <label>Title</label>
+        <input name="title" type="text" value="" />
+        <br /><br />
+        <lable>Contents</lable>
+        <textarea name="content"></textarea>
+        <br /><br />
+        <input type="submit" value="POST method" />
+    </form>
+</body>
+</html>
