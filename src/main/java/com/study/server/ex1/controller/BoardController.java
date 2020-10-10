@@ -24,10 +24,10 @@ public class BoardController {
     }
 
     @PostMapping("/board/echo")
-    public ModelAndView postEcho(@RequestParam String title,
+    public ModelAndView postEcho(@RequestParam("title") String name,
                                 @RequestParam String content) {
         ModelAndView result = new ModelAndView("board/echo");
-        result.getModel().put("title", title);
+        result.getModel().put("title", name);
         result.getModel().put("content", content);
 
         return result;
